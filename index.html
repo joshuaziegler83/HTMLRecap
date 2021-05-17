@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Recap</title>
+</head>
+<body>
+    <nav style="text-align: right;">
+        <a href="../1-HTML-Basics/index.html">HTML Basics</a>
+        <a href="../2-CSS-Basics/index.html">CSS Basics</a>
+    </nav>
+
+    <nav>
+        <h1>Vertical Navigation Bar</h1>
+        <ul>
+            <li>
+                <a href="./03-lists.html">Lists</a>
+            </li>
+            <li>
+                <a href="./05-images.html">Images</a>
+            </li>
+            <li>
+                <a href="./06-tables.html">Tables</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Div Tags</h1>
+    <ul>
+        <li>Help organize layout</li>
+        <li>Help with DOM manipulation</li>
+    </ul>
+
+    <h1>Examples</h1>
+    <div style="background-color: teal; border:1px solid green;">
+        <h2>Div One</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+           voluptas fuga earum obcaecati atque facilis suscipit totam quasi, 
+           fugit laborum et iusto laboriosam quaerat quo doloribus perferendis minima ex sit!
+        </p>
+    </div>
+    <div style="border:1px solid blue;">
+        <h2>Div Two</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et provident 
+            cum minima, ex magni eum autem culpa, doloribus earum inventore at in, 
+            sunt omnis ab iste reprehenderit est sequi laudantium?
+        </p>
+    </div>
+
+    <div style="background-color: red;">
+        <h2>Div Three</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, 
+            minima maxime? Commodi, omnis. Illum voluptate, repudiandae dolores 
+            asperiores voluptas vel possimus dignissimos minima. Deserunt porro 
+            velit rem exercitationem itaque ratione.
+        </p>
+    </div>
+    <div style="border:solid 2px black; padding: .5rem;">
+        <form>
+            <fieldset>
+                <legend>Customer Information</legend>
+                <p>
+                    <label>
+                        Customer Name:
+                        <input name ="name"/>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Telephone:
+                        <input type="tel" name ="tel"/>
+                    </label> 
+                </p>
+                <p>
+                    <label>
+                        Email Address                        
+                        <input type="email" name ="email"/>
+                    </label> 
+                </p>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Fixins</legend>
+                <p>
+                    <input type="checkbox" name ="fixins"
+                        id = "Cilantro Lime Rice" value ="Cilantro Lime Rice"/>
+                    <label for = "Cilantro Lime Rice">Cilantro Lime Rice</label>
+                </p>
+                <p>
+                    <input type="checkbox" name ="fixins"
+                        id = "guacamole" value ="guacamole"/>
+                    <label for = "guacamole">Guacamole</label>
+                </p>
+                <p>
+                    <input type="checkbox" name ="fixins"
+                        id = "queso" value ="queso"/>
+                    <label for = "queso">Queso</label>
+                </p>
+                <p>
+                    <input type="checkbox" name ="fixins"
+                        id = "Shredded Cheese" value ="Shredded Cheese"/>
+                    <label for = "Shredded Cheese">Shredded Cheese</label>
+                </p>
+                <p>
+                    <input type="checkbox" name ="fixins"
+                        id = "beans" value ="beans"/>
+                    <label for = "beans">Black Beans</label>
+                </p>
+                <p>
+                    <input type="checkbox" name ="fixins"
+                        id = "salsa verde" value ="salsa verde"/>
+                    <label for = "salsa verde">Salsa Verde</label>
+                </p>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Delivery Instructions</legend>
+                <p>
+                    <label for="time">Prefered Delivery Time:</label>
+                    <input id="time" name="time" type="time"
+                        min ="11:00" max = "21:00">
+                </p>
+                <p>
+                    <label for="instructions">Delivery Instructions:</label>
+                    <textarea id="instructions" name ="instructions"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Submit Order</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    <h1>IFrames</h1>
+    <p>
+        An iframe allows us to embed HTML documents inside HTML documents!
+    </p>
+    <iframe width="1019" height="573" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube video player"
+        frameborder ="0"
+        width="560" height ="315"
+        allowfullscreen>
+    </iframe>
+
+    <footer style="background-color: gray;">
+        <p>Copywrite © 2006 The Example Company</p>
+        <p>
+            <a href="#about">About Us</a>
+            <a href="#policy">Policy</a>
+            <a href="#contact">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>
